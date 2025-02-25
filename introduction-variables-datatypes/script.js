@@ -70,3 +70,17 @@ const result = num2 == num3 ? "yes" : "no"
 
 
 console.log(result)
+
+
+let food1 = ["beans, rice, bread"]
+
+let food2 = ["groundnut"]
+
+let foods = food1 != food2 ? "yes" : "no"
+console.log (foods)
+
+let txt1 = "i am good,";
+
+
+txt1 += " what about you";
+console.log(txt1);
