@@ -84,3 +84,51 @@ let txt1 = "i am good,";
 
 txt1 += " what about you";
 console.log(txt1);
+
+
+// equality operators
+// strict equality operators
+
+
+console.log(10 === "10")
+console.log(true === 1)
+console.log(false === 0)
+
+console.log([] === 0)
+console.log([1, 2, 3] === [1, 2, 3])
+console.log({name: "dolapo"} === {name: "dolapo"})
+
+
+
+let obj1 = {name: "dolapo"};
+let obj2 = {name: "dolapo"};
+
+console.log(typeof obj1)
+
+console.log(obj1 === obj2)
+
+
+
+
+let array1 = [1, 2, 3];
+let array2 = [1, 2, 3];
+
+console.log(typeof array1 == array2)   
+
+
+
+// loose equality operators
+
+console.log(10 == "10")
+console.log(true == 1)
+console.log(false == 0)
+console.log([1, 2, 3] == [1, 2, 3])
+console.log({name: "dolapo"} == {name: "dolapo"})
+
+let obj3 = {name: "dolapo"};
+let obj4 = {name: "dolapo"};
+
+console.log(obj3 == obj4)
+
+console.log("\t\n" == 0)
+console.loglog("redox" ==ajasd)

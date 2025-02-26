@@ -95,6 +95,9 @@ const result = number % 2 === 0 ? 'even' : 'odd';
 
 console.log(result);
 
+
+
+
 const temperature = 50;
 
 const weather = temperature < 20 ? ' it is a hot day' : 'it is a cold day';
@@ -217,7 +220,11 @@ switch (role) {
 
 // loops are used to execute a block of code multiple times.
 
-for (let i = 03; i < 10; ++i) {
+// for(initialization; condition; increment/decrement) {
+//     // code to be executed
+// }       
+
+for (let i = 0; i < 10; ++i) {
     console.log(i);
     
 }
@@ -231,6 +238,114 @@ for (i = 0; i <= 5; i++) {
     x  += i ;
     console.log(x);
 }
+
+// Examle2
+for (let i = 1; i < 11; i += 2) {
+    console.log( `odd: ${i}`);
+}
+
+// for (let i = 0; i <= 5; i++) {
+//     if (i === 2) {
+//         continue;
+//     }
+//     console.log(`oddss: ${i}`);
+// }
+
+let fruit = ['apple', 'banana', 'mango', 'orange',];
+
+for (let i = 0; i <  fruit.length; i++)
+{
+    if (fruit[i] === 'mango') {
+        continue;
+    }
+    console.log(fruit[i]);
+
+}
+
+let names = "kaybee";
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+// for...in loop
+
+let user = {name: 'kaybee', age: 30, city: 'lagos'};
+for(key in user) {
+    
+    console.log(key + ':', user[key]);
+}
+
+
+let colors = ['red', 'green', 'blue', 'back']
+
+for(color of colors){
+    console.log(color )
+}
+
+// while loop
+
+// while (condition) {
+//     code to execute
+// }
+
+
+// Example
+
+
+// let k = 1; 
+// while(i <= 7  ){
+//     console.log(i)
+// }
+
+let y = 0;
+
+while (y < 5) {
+    if (y === 3) {
+        y++;
+        continue;
+    }
+    console.log(y);
+    y++;
+}
+
+let fruitz = ['apple', 'banana', 'mango', 'orange'];
+
+for (let i = 0; i < fruitz.length; i++) {
+    if (fruitz[i] === 'mango') {
+        break;
+    }
+    console.log(fruitz[i]);
+} 
+
+let students = ['apple', 'banana', 'mango', 'orange'];
+students.forEach((students, i) => {
+    console.log(` ${i}: ${students}`)
+    
+});
+
+
+
+
+let numbers = [1, 2, 3, 4];
+let multiplier = 2; 
+
+for (let i = 0; i < numbers.length; i++) {
+    numbers[i] * multiplier;
+}
+
+console.log(numbers);
+Refactor loops to skip specific values
+
+
+
+
+    
+
+
+
+
+
+
 
 
 
