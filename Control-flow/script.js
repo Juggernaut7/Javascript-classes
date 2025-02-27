@@ -334,7 +334,67 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log(numbers);
-Refactor loops to skip specific values
+
+
+
+let numb = [3, 7, 2, 9, 5];
+let squares = [];
+for (let i = 0; i < numb.length; i++) {
+    squares[i] = (numb[i] * numb[i]);
+}
+console.log(squares);
+
+
+let numb2 = [1, 2, 3, 5, 6, 7];
+
+for (let i = 0; i < numb2.length; i++) {
+    if (numb2[i] === 5) {
+        break;
+     
+       
+    }
+    console.log(numb2[i]);
+
+
+}
+
+
+
+let colorss = ["red", "green", "blue"];
+
+for (colorz of colorss) {
+    console.log(colorz);
+}
+
+
+let nums = -1;
+
+let results = nums > 0 ? "Positive" : (nums === 0 ? "Zero" :  "Negative");
+
+console.log(results);
+
+
+let fizznum = 15;
+
+let fizresult = (fizznum % 3 === 0 && fizznum % 5 === 0) ? "FizzBuzz" :
+                (fizznum % 3 === 0) ? "Fizz" :
+                (fizznum % 5 === 0) ? "Buzz" : 
+                fizznum;
+
+console.log(fizresult); 
+ 
+
+let isloggedin = true;
+
+if isloggedin = true {
+    console.log('You are logged in');
+}
+else if (isloggedin = false) {
+    console.log('You are not logged in');
+}
+else {
+    console.log('Invalid input');
+}
 
 
 
