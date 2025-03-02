@@ -126,13 +126,34 @@ console.log(checkNumber(0));
 console.log(checkNumber(5));
 console.log(checkNumber(-5));
 
+function checkNumbers (number){
+    if (number > 0){
+        return 'positive';
+    }
+    else if (number < 0)
+    {
+        return 'negative';
+    }
+    else {
+        return 'zero'
+    }
+}
+console.log(checkNumbers(0))
+console.log(checkNumbers(2))
+
 
 // 'ternary operator'
 
-const isEven = (num) => num % 2 === 0 ? 'even' : ('odd');
+const isEven = (num) => num % 2 === 0 ? 'even' : 'odd';
 
 console.log (isEven(5));
 console.log (isEven(6));
+
+
+function issOddd (numbz){
+  return numbz % 2 === 0 ? 'even' : 'odd';
+}
+console.log(issOddd(3))
 
 const login = (username, password, isadmin) => {   
     if (!username || !password) 
@@ -200,3 +221,17 @@ function displayFuncName (name){
     greet();
 }
 displayFuncName('kaybee');
+
+function map(f, a) {
+    const result = new Array(a.length);
+    for (let i = 0; i < a.length; i++) {
+      result[i] = f(a[i]);
+    }
+    return result;
+  }
+  
+  const numbers = [0, 1, 2, 5, 10];
+  const cubedNumbers = map(function (x) {
+    return x * x * x;
+  }, numbers);
+  console.log(cubedNumbers); 

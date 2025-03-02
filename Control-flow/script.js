@@ -8,9 +8,9 @@ console.log ('Hello, World!');
 
 // conditional --> if, else, else if, switch, ternary operator
 
-if ("condition") {
-    // code to be executed if condition is true
-}
+// if ("condition") {
+//     // code to be executed if condition is true
+// }
 
 let age = 30;
 if (age === 25) {
