@@ -1,0 +1,31 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(rgb(73, 73, 212) , rgb(250, 250, 74));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    gap: 4rem;
+    color: aqua;
+
+}
+
+#header{
+   animation: txt 4s ease-in-out .1s;
+    transition: all, 1s ease .1ms ;
+}
+@keyframes txt {
+   0%, 50%{
+        transform: translateX(-200px);
+        color: rgb(226, 198, 43);
+
+    }
+    50%, 100%{
+        transform: translateX(200px);
+    }
+} */
