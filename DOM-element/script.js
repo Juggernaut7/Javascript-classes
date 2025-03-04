@@ -72,7 +72,7 @@ document.querySelector('button').addEventListener('click', function(){
     document.getElementById('message')
     // .textContent = 'Button Clicked!'
     if (message.textContent === 'hello!'){
-        message.textContent = 'button clicked'
+        button.textContent = 'button clicked'
 
     }
     else{
@@ -107,8 +107,14 @@ document.getElementById('greetBtn').addEventListener('click', () => greet('kaybe
 const newBOX = document.createElement('div')
 newBOX.textContent = 'how are u doing today'
 
-document.body.appendChild(newBOX)
+document.body.appendChild(newBOX) 
 
+const box = document.getElementById('box')
+const newh1 = document.createElement('h1')
+newh1.textContent = 'bruv'
+newh1.style.color = 'white'
+
+box.appendChild(newh1)
 
 
 
