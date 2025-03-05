@@ -1,4 +1,4 @@
-const cohorts = ['dolly-pee', 'amu-sun', 'lateefah', 'abdullah', 'feranmi', 'juggernaut', 'art-redox', 'dammy-dot'];
+const cohorts = ['dollypee', 'amu-sun', 'lateefah', 'abdullah', 'feranmi', 'juggernaut', 'art-redox', 'dammy-dot'];
 
 console.log(cohorts)
 
@@ -71,7 +71,7 @@ console.log(addEl)
 
 const foods = ['rice', 'beans', 'amala', 'semo']
 
-foods.splice(3, 0, 'tuwo', 'yam')
+foods.splice(3, 2, 'tuwo', 'yam')
 
 console.log(foods)
 
@@ -87,7 +87,7 @@ console.log(wears);
 // when  not used, it slices the rest of the element 
 
 const male = ['daodu', 'konkro', 'gbojuko', 'ogundiji', 'afuni']
-
+ 
 console.log(male)
 const newString = 'adeyemi'
 console.log(newString.length);
@@ -158,7 +158,7 @@ let totalVal = 0;
 const trans = [42, 45, 26, 4, 13, 16];
 
 trans.forEach((trn) => {
-    console.log(totalVal, (totalVal += trn), trn)
+    console.log(totalVal = totalVal + trn)
 })
 console.log(totalVal)
   
@@ -185,3 +185,88 @@ console.log(category)
 
 const comodities = investory.map((value) => value.name)
 console.log(comodities)
+
+// map method    createa new aray AND APPLY function without mdifying the origuinal array
+
+const arr = [1, 2, 3, 4, 5, 6]
+const multipliedVal = arr.map((el)=> el * 2)
+
+console.log(multipliedVal);
+
+
+const words = ['hello','world', 'javascript']
+console.log(words.map((word) => word.toUpperCase()))
+
+const pricesInUsd = [200, 120, 360, 90];
+const xchangeRate = 1490;
+
+console.log(pricesInUsd.map((usd)=> usd * xchangeRate))
+
+
+const users = [
+    {name: 'juggernaut', age: 300},
+    {name: 'abdullah', age: 1000},
+    {name: 'muiz', age: 1030},
+    {name: 'zakira', age: 1633}
+
+]
+
+const nameOnly = users.map((names) => names.name);
+console.log(nameOnly)
+const products = [
+    {name: 'laptop', price: 300},
+    {name: 'desktop', price: 1000},
+    {name: 'mouse', price: 1030},
+    {name: 'keyboard', price: 1633}
+
+]
+
+const productWithId = products.map((product, index)=> (
+    {
+        id: index + 1,
+        ...product,
+    }))
+    console.log(productWithId)
+
+    // const ids = productWithId.map((idz)=> return idz.ids);
+    // console.log(ids)
+
+    const arrayNumber = [1, 2,3, 4, 5, 6, 7, 8, 9, 10]
+
+    const lessThan =arrayNumber.map((less) => {
+       if (less < 6) return less
+    })
+    console.log(lessThan)
+
+    
+    //filter method.
+
+    const evenNumber = arrayNumber.filter((i)=> i % 2 === 0)
+    
+    const below = productWithId.filter((product)=> product.price <= 1000)
+    console.log(below)
+
+    const small = productWithId.filter((product) => product.name.length < 7 )
+    console.log(small)
+
+    
+    let newArrs = [100, 'pelumi', false, {}, null, undefined];
+
+let stringValues = newArrs.filter((item) => typeof item === 'string');
+
+console.log(stringValues); 
+
+
+
+let totalPrice = 0;
+
+const prices = productWithId.map((product) => product.price);
+
+for (let i = 0; i < prices.length; i++) {
+    totalPrice += prices[i];
+}
+console.log(totalPrice); 
+
+
+
+
