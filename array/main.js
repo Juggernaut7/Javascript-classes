@@ -3,7 +3,7 @@ const cohorts = ['dollypee', 'amu-sun', 'lateefah', 'abdullah', 'feranmi', 'jugg
 console.log(cohorts)
 
 // nested array 
-const nested = [[1,2,3], [4,5,6], [7,8,9]];
+const nested = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 console.log(nested);
 
 const newArr = nested[0][1][2]
@@ -12,7 +12,7 @@ console.log(nested.length)
 
 const replaceEl = (cohorts[1] = 'abdul')
 console.log(replaceEl)
-console.log( typeof replaceEl)
+console.log(typeof replaceEl)
 
 // to add a new element to last index of array 
 cohorts[5] = 'olodo'
@@ -32,7 +32,7 @@ console.log(student)
 
 // push to add a new element at the end of an array 
 
-const pushed =student.push('bisola', 'lateefah') //to print new array length
+const pushed = student.push('bisola', 'lateefah') //to print new array length
 
 // pop method to remove the last element in an array 
 
@@ -61,7 +61,7 @@ const colorz = ['black', 'blue', 'green', 'yellow', 'magenta', 'cyan']
 
 console.log(colorz)
 
-const addEl = colorz.unshift('blue') 
+const addEl = colorz.unshift('blue')
 console.log(colorz)
 console.log(addEl)
 
@@ -87,7 +87,7 @@ console.log(wears);
 // when  not used, it slices the rest of the element 
 
 const male = ['daodu', 'konkro', 'gbojuko', 'ogundiji', 'afuni']
- 
+
 console.log(male)
 const newString = 'adeyemi'
 console.log(newString.length);
@@ -122,7 +122,7 @@ console.log(sort)
 
 // index of is use to find the index of the first occcurence of a specified element in an Array. it search he array from the beginning ti the end and return the first occurence of the specified element and if the element is not found it return negative 1
 // indexOf
-const num = [1, 2, 3, 4, 6, 8, 3, 8, 9, 12,4, 11, 1, 9, 2]
+const num = [1, 2, 3, 4, 6, 8, 3, 8, 9, 12, 4, 11, 1, 9, 2]
 console.log(num)
 
 const index1 = num.indexOf(11)
@@ -161,7 +161,7 @@ trans.forEach((trn) => {
     console.log(totalVal = totalVal + trn)
 })
 console.log(totalVal)
-  
+
 
 names.forEach((name) => console.log(`congratulation
     ${name}, you will be representing the team in uk next week`))
@@ -170,11 +170,11 @@ names.forEach((name) => console.log(`congratulation
 // map method  
 
 const investory = [
-    {name: 'rice', category: 'carborhydrates' },
-    {name: 'okro', category: 'vegetable' },
-    {name: 'beans', category: 'protein' },
-    {name: 'yam', category: 'carborhydrates' },
-    {name: 'garri', category: 'carborhydrates' }
+    { name: 'rice', category: 'carborhydrates' },
+    { name: 'okro', category: 'vegetable' },
+    { name: 'beans', category: 'protein' },
+    { name: 'yam', category: 'carborhydrates' },
+    { name: 'garri', category: 'carborhydrates' }
 ]
 
 const category = investory.map((value) => {
@@ -189,75 +189,73 @@ console.log(comodities)
 // map method    createa new aray AND APPLY function without mdifying the origuinal array
 
 const arr = [1, 2, 3, 4, 5, 6]
-const multipliedVal = arr.map((el)=> el * 2)
+const multipliedVal = arr.map((el) => el * 2)
 
 console.log(multipliedVal);
 
 
-const words = ['hello','world', 'javascript']
+const words = ['hello', 'world', 'javascript']
 console.log(words.map((word) => word.toUpperCase()))
 
 const pricesInUsd = [200, 120, 360, 90];
 const xchangeRate = 1490;
 
-console.log(pricesInUsd.map((usd)=> usd * xchangeRate))
+console.log(pricesInUsd.map((usd) => usd * xchangeRate))
 
 
 const users = [
-    {name: 'juggernaut', age: 300},
-    {name: 'abdullah', age: 1000},
-    {name: 'muiz', age: 1030},
-    {name: 'zakira', age: 1633}
+    { name: 'juggernaut', age: 300 },
+    { name: 'abdullah', age: 1000 },
+    { name: 'muiz', age: 1030 },
+    { name: 'zakira', age: 1633 }
 
 ]
 
 const nameOnly = users.map((names) => names.name);
 console.log(nameOnly)
 const products = [
-    {name: 'laptop', price: 300},
-    {name: 'desktop', price: 1000},
-    {name: 'mouse', price: 1030},
-    {name: 'keyboard', price: 1633}
+    { name: 'laptop', price: 300 },
+    { name: 'desktop', price: 1000 },
+    { name: 'mouse', price: 1030 },
+    { name: 'keyboard', price: 1633 }
 
 ]
 
-const productWithId = products.map((product, index)=> (
+const productWithId = products.map((product, index) => (
     {
         id: index + 1,
         ...product,
     }))
-    console.log(productWithId)
+console.log(productWithId)
 
-    // const ids = productWithId.map((idz)=> return idz.ids);
-    // console.log(ids)
+// const ids = productWithId.map((idz)=> return idz.ids);
+// console.log(ids)
 
-    const arrayNumber = [1, 2,3, 4, 5, 6, 7, 8, 9, 10]
+const arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    const lessThan =arrayNumber.map((less) => {
-       if (less < 6) return less
-    })
-    console.log(lessThan)
+const lessThan = arrayNumber.map((less) => {
+    if (less < 6) return less
+})
+console.log(lessThan)
 
-    
-    //filter method.
 
-    const evenNumber = arrayNumber.filter((i)=> i % 2 === 0)
-    
-    const below = productWithId.filter((product)=> product.price <= 1000)
-    console.log(below)
+//filter method.
 
-    const small = productWithId.filter((product) => product.name.length < 7 )
-    console.log(small)
+const evenNumber = arrayNumber.filter((i) => i % 2 === 0)
 
-    
-    let newArrs = [100, 'pelumi', false, {}, null, undefined];
+const below = productWithId.filter((product) => product.price <= 1000)
+console.log(below)
+
+const small = productWithId.filter((product) => product.name.length < 7)
+console.log(small)
+
+
+let newArrs = [100, 'pelumi', false, {}, null, undefined];
 
 let stringValues = newArrs.filter((item) => typeof item === 'string');
 
-console.log(stringValues); 
-
-
-
+console.log(stringValues);
+/////===================================
 let totalPrice = 0;
 
 const prices = productWithId.map((product) => product.price);
@@ -265,7 +263,126 @@ const prices = productWithId.map((product) => product.price);
 for (let i = 0; i < prices.length; i++) {
     totalPrice += prices[i];
 }
-console.log(totalPrice); 
+console.log(totalPrice);
+
+//======more examples==========
+
+const namezFilter = ['Soliu', 'dolu', 'juggernaut', 'feranmhi', 'dollypee']
+
+
+const upperCase = namezFilter.filter((upper) => {
+    if (upper.charAt(0) === upper.charAt(0).toUpperCase()) return upper
+})
+
+// const namezFilter = ['Soliu', 'dolu', 'juggernaut', 'feranmhi', 'dollypee']
+
+const upperCaseNames = namezFilter.filter(name => /^[A-Z]/.test(name));
+
+console.log(upperCaseNames);
+//for each vs map
+
+const use = [{ name: 'juggernaut', age: 10 },
+{ name: 'dollypee', age: 2 }
+]
+
+//add 5 to each of use's [age]
+
+// use.map((us) => us.age += 5)
+
+// console.log(use)
+
+
+use.forEach((us) => { return us.age += 5 })
+console.log(use)
+
+
+
+
+
+//reduce
+
+//syntax === array.reduce((accumulator, currentValue, currentIndex, array), initiative)
+//1. sum of array elements
+//2. flatten and array
+//3. occurence of an element/item in an array
+//4. find the maximum value
+//6. grouping data by property
+
+//example 1: sum of array elememts
+
+
+
+const myNum = [1, 2, 3, 4, 5, 6]
+const zum = myNum.reduce((accumulator, currValue) => accumulator + currValue,)
+
+console.log(zum)
+
+
+//example 2. flatten an array
+
+const nestedArr = [
+    [1, 3],
+    [3, 4],
+    [5, 6]
+];
+
+const flatten = nestedArr.reduce((acc, currVal) => (acc.concat(currVal)), [])
+
+console.log(flatten)
+
+const noRepeat = flatten.reduce((acc, current) => {
+    if (!acc.includes(current)) {
+        acc.push(current);
+    }
+    return acc;
+}, []);
+console.log(noRepeat);
+
+// to remove duplicate from the result, u can use reduce, filter and also for each method
+
+const flatFilter = flatten.filter((e, index, array) => array.indexOf(e) === index)
+console.log(flatFilter)
+
+
+
+
+//2
+
+
+
+// const nestedArr2 = [
+//     [1, 3],[ [3, 4],[5, 6]], [7, 8]
+// ];
+// const flatten2 = nestedArr2.reduce((acc, currValu, currentIndex) => {
+//     if (currValu.)
+// })
+
+// const nestedArray = [[1, 2], [3, 4], [4, 6]]
+
+
+
+//example 3: occurence odf an eelment/item in an array
+
+
+const myFruits = ['grape', 'banana', 'banana', 'orange']
+
+
+const count = myFruits.reduce((acc, curr) => {
+    acc[curr] = (acc[curr] || 0) + 1
+        ;
+    return acc;
+}, {})
+console.log(count)
+
+
+
+//example 4: find the maximum value
+
+const maxExample = [100, 70, 3, 10, 4]
+
+const max = maxExample.reduce((acc, curr) => curr > acc ? curr : acc, maxExample[0])
+
+console.log(max)
 
 
 
