@@ -77,6 +77,9 @@ const cohort6 = {
 const firstStudent = cohort6.male.names[0];
 console.log({ firstStudent })
 
+/////////////
+
+
 
 const dltAfrica = [{
     cohorts: {
@@ -152,3 +155,123 @@ const student = {
 
 }
 console.log(student.sumFav())
+
+
+
+
+const player = {
+    fristName: 'Alejandro',
+    lastName: 'ganarcho',
+
+    age: 40,
+    team: {
+        club: 'manchester red',
+        location: 'manchester united',
+        manager: 'solanke'
+
+    },
+    jerseyNumber: 7
+    
+}
+console.log(player);
+console.log(player.team.club)
+console.log(player['team']['manager'])
+
+player.team.location = 'spain'
+console.log(player.team.location)
+
+
+// builtInMethod //
+
+const myObject = {
+    myMethod1: () => {}, //arrowFunc
+    myMethod2: function() {}, //funcDeclaration
+    myMethod3() {} //funcExpression
+}
+
+
+
+const Dog = {
+    name: 'puppy',
+    age: 20,
+
+    bark: () => {
+        console.log('gbor!! gbor!!')
+    }
+}
+console.log(Dog.name);
+console.log(Dog.age);
+Dog.bark();
+
+// objectMethods 
+
+// Object.keys()
+// Object.value ()
+// Object.entries ()
+// Object.freeze()
+// Object.seal()
+
+const employees = {
+    boss: ' mr. Aliu',
+    secretary: 'soliu bhai',
+    sales: 'mushibah',
+    accountant: 'Juggernaut'
+}
+
+const employeeInfo = Object.keys(employees)
+
+console.log(employeeInfo);
+
+const employeeData = Object.values(employees)
+
+console.log(employeeData);
+
+const session = {
+    id: 1,
+    date: '10-march-2030',
+    device: 'Mobile',
+    browser: 'Chrome'
+}
+
+const sessionVal = Object.entries(session)
+
+console.log(sessionVal);
+
+
+
+const operatingSystem = {
+    name: 'lineous',
+    version: 16.4,
+    license: 'openSource'
+}
+
+// .freeze prevent modification of existing StylePropertyMap. it prevent properties from being added or remove
+
+
+const user = {
+      Username: 'Juggernaut',
+      password: 'pass127'
+}
+
+const userInfo = Object.freeze(user)
+console.log(userInfo)
+
+
+userInfo.Username = 'Ali'
+console.log(userInfo)
+
+// seal prevent new property of an object from being added or removed buh can be modified unlike freeze
+
+
+const user1 = {
+    Username: 'Juggernaut',
+      password: 'pass127'
+}
+
+const user1Info = Object.seal(user1)
+console.log(user1Info)
+
+user1Info.Username = 'Ali'
+console.log(user1Info)
+
+

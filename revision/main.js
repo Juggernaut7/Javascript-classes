@@ -71,6 +71,7 @@ const bootCamp = {
 };
 
 // Function to return a student's project
+
 function returnVals(studentName) {
     const projects = bootCamp.students.cohortX.projects;
     return projects[studentName] ? projects[studentName] : 'Student not found';
