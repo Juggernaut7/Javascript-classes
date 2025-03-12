@@ -279,7 +279,7 @@ for(key in user) {
 let colors = ['red', 'green', 'blue', 'back']
 
 for(color of colors){
-    console.log(color )
+    console.log(colors )
 }
 
 // while loop
