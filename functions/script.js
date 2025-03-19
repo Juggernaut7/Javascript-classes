@@ -34,7 +34,7 @@ function jamb (age) {
     else if (age < 30 && age > 18) {
         return "you are eligible to write jamb";
 
-}
+} 
 else {
     return "you are too young to write jamb";
 }
@@ -209,6 +209,10 @@ function outerFunction () {
     innerFunction ();
 }
 outerFunction();
+
+
+
+
 
 
 // classwork
