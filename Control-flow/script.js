@@ -23,12 +23,28 @@ if (age === 25) {
 
 
 
+
 let isLoggedin = true;
 if (!isLoggedin) {
     console.log('You are not logged in');
 } else {
     console.log('You are logged in...');
 }
+
+let numberz = -2;
+if (numberz % 2 === 0){
+    console.log('even') 
+}else if (numberz > 0){
+    console.log('odd') 
+}else if (numberz < 0){
+    console.log('negative') 
+}else{
+    console.log('zero') 
+};
+
+// console.log(numberz)
+
+
 
 let balance = 500;
 let withdrawal = 1000;
@@ -233,11 +249,6 @@ let table = 5;
 for (let i = 1; i <= 10; i++) {
     console.log(`${table} * ${i} = ${table * i}`);
 }
-let i, x = '';
-for (i = 0; i <= 5; i++) {
-    x  += i ;
-    console.log(x);
-}
 
 // Examle2
 for (let i = 1; i < 11; i += 2) {
@@ -384,17 +395,17 @@ let fizresult = (fizznum % 3 === 0 && fizznum % 5 === 0) ? "FizzBuzz" :
 console.log(fizresult); 
  
 
-let isloggedin = true;
+// let isloggedin = true;
 
-if isloggedin = true {
-    console.log('You are logged in');
-}
-else if (isloggedin = false) {
-    console.log('You are not logged in');
-}
-else {
-    console.log('Invalid input');
-}
+// if isloggedin = true {
+//     console.log('You are logged in');
+// }
+// else if (isloggedin = false) {
+//     console.log('You are not logged in');
+// }
+// else {
+//     console.log('Invalid input');
+// }
 
 
 
