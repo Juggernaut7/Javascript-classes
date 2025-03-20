@@ -1,0 +1,10 @@
+{
+    "name": "ajayi",
+    "age": 200,
+    "hobies": ["researching", "gaming"],
+    "address": {
+        "street": "old yidi road, ita amodu",
+        "number": "no 55",
+        "city": "lagos"
+    }
+}
