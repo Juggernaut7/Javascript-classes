@@ -1,0 +1,84 @@
+body{
+    background-color: #f4f4f4;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    font-family: Tahoma (sans-serif);
+  }
+  
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  
+  }
+  
+  .container{
+    width: 60%;
+    max-width: 35rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, b, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  
+  input, textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+  }
+  
+  button{
+    background: linear-gradient(135deg, #7f00ff, #a101b6);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  button:hover{
+    background: linear-gradient(135deg, #480f81, #420e49);
+    transform: translateY(-2px);
+  }
+  
+  ul{
+    list-style-type: none;
+    padding: 0;
+  
+  }
+  
+  
+  li{
+    background-color: #ddd;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  .darkMode{
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .dark-mode .container{
+    background-color: #333;
+    color: #fff;
+  }
