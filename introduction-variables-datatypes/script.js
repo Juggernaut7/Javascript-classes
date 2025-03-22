@@ -130,5 +130,11 @@ let obj4 = {name: "dolapo"};
 
 console.log(obj3 == obj4)
 
-console.log("\t\n" == 0)
-console.loglog("redox" ==ajasd)
+// console.log("\t\n" == 0)
+// console.loglog("redox" ==ajasd)
+
+let  number1 = 10;
+let number2 = '10'
+
+let resultz = number1 === number2? true : false
+console.log(resultz)
