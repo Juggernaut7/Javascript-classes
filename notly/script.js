@@ -84,7 +84,7 @@ darkModeButton.addEventListener("click", function () {
 searchInput.addEventListener("input", function () {
     let searchTerm = searchInput.value.toLowerCase();
     let notes = JSON.parse(localStorage.getItem("notes")) || [];
-     let filteredNotes = notes.filter((note) => noted.text.toLowerCase().includes(searchTerm));
+    let filteredNotes = notes.filter((note) => note.text.toLowerCase().includes(searchTerm));
     noteList.innerHTML = "";
     filteredNotes.forEach(addNoteToList);
 });
